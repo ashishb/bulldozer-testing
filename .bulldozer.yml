@@ -39,19 +39,19 @@ merge:
       # strings. This is disabled (empty string) by default.
       message_delimiter: ==commits==
 
-  # "required_statuses" is a list of additional status contexts that must pass
-  # before bulldozer can merge a pull request. This is useful if you want to
-  # require extra testing for automated merges, but not for manual merges.
-  required_statuses:
-    - "ci/circleci: general-test"
-    - "ci/circleci: install_dependencies"
-    - "ci/circleci: lint-checks"
-    - "ci/circleci: mobile-test"
-    - "ci/circleci: protocol-test"
-    - "ci/circleci: verification-pool-api"
-    - "ci/circleci: end-to-end-geth-transfer-test"
-    - "ci/circleci: end-to-end-geth-sync-test"
-    - "ci/circleci: end-to-end-geth-governance-test"
+  # # "required_statuses" is a list of additional status contexts that must pass
+  # # before bulldozer can merge a pull request. This is useful if you want to
+  # # require extra testing for automated merges, but not for manual merges.
+  # required_statuses:
+  #   - "ci/circleci: general-test"
+  #   - "ci/circleci: install_dependencies"
+  #   - "ci/circleci: lint-checks"
+  #   - "ci/circleci: mobile-test"
+  #   - "ci/circleci: protocol-test"
+  #   - "ci/circleci: verification-pool-api"
+  #   - "ci/circleci: end-to-end-geth-transfer-test"
+  #   - "ci/circleci: end-to-end-geth-sync-test"
+  #   - "ci/circleci: end-to-end-geth-governance-test"
 
   # If true, bulldozer will delete branches after their pull requests merge.
   delete_after_merge: true
